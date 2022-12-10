@@ -11,5 +11,13 @@ module.exports = {
     "gatsby-plugin-image",
     // Handles the actual image processing that is used by gatsby-plugin-image.
     "gatsby-plugin-sharp",
+    // Filesystem data source
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
+    },
   ],
 }
