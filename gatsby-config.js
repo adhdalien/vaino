@@ -7,16 +7,9 @@ module.exports = {
     siteUrl: `https://www.vaino.lol`,
   },
   plugins: [
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [{
-          resolve: 'gatsby-remark-vscode',
-          options: {
-            theme: 'Abyss'
-          }
-        }]
-      }
-    }
+    // StaticImage component
+    "gatsby-plugin-image",
+    // Handles the actual image processing that is used by gatsby-plugin-image.
+    "gatsby-plugin-sharp",
   ],
 }
