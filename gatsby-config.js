@@ -4,7 +4,19 @@
 module.exports = {
   siteMetadata: {
     title: `Vaino`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.vaino.lol`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [{
+          resolve: 'gatsby-remark-vscode',
+          options: {
+            theme: 'Abyss'
+          }
+        }]
+      }
+    }
+  ],
 }
